@@ -1,0 +1,21 @@
+.input {
+    padding: .4em 0;
+    text-align: center;
+    font-size: .9em;
+    border-radius: .7em;
+    border: 1px solid gray;
+    color: var(--cinza);
+    font-family: var(--font-principal);
+}
+
+.fieldset{
+    border: transparent;
+}
+
+@media (min-width: 49.0rem){
+    .input{
+        font-size: 1.02em;
+        padding: .5em 0;
+        width: 100%;
+    }
+}
