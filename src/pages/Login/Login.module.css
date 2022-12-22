@@ -1,0 +1,42 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerAnimation {
+    width: 70%;
+    height: 14rem;
+    background-image: url(../../assets/gifWordWhite.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 2em 0;
+}
+
+.containerLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10em;
+}
+
+@media (min-width: 49.0rem) {
+    .main {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .containerAnimation {
+        width: 40%;
+        height: 33rem;
+        background-size: 100%;
+        margin: 0;
+    }
+    
+    .containerLogin {
+        width: 16rem;
+        height: 12em;
+        margin-right: 3em;
+    }
+ 
+}
