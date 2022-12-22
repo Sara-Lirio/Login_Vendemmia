@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+:root { 
+    --rosa-vendemmia: #FF2A6A;
+    --roxo-vendemmia: #472878;
+    --roxo-escuro: #211239;
+    --branco: #FFF;
+    --cinza: #787A78;
+
+    --font-principal: 'Poppins', sans-serif;
+}
