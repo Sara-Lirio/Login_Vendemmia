@@ -1,0 +1,31 @@
+.header {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2em;
+}
+
+.header::after{
+    content: "";
+    width: 4rem;
+    height: .16rem;
+    background-color: var(--rosa-vendemmia);
+    margin-top: 20px;
+}
+
+.logoHeader {
+    width: 12rem;
+}
+
+@media (min-width: 49.0rem){
+    .header{
+        align-items: flex-end;
+        margin-right: 2em;
+    }
+
+    .header::after{
+        width: 0;
+    }
+}
