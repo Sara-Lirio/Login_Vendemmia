@@ -9,7 +9,12 @@
     border: transparent;
     margin-top: .6em ;
     font-family: var(--font-principal);
-    letter-spacing: 4px
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--rosa-vendemmia);
 }
 
 @media (min-width: 49.0rem){
