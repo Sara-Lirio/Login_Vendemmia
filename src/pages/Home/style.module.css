@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.table {
+    font-family: var(--font-principal);
+    width: 80%;
+    box-shadow: 3px 3px 8px gray;
+    -webkit-box-shadow: 3px 3px 8px gray;
+    -moz-box-shadow: 3px 3px 8px gray;
+    margin: 2em auto;
+    padding: .8em 1.2em;
+}
+
+.tr {
+    font-size: .75em;
+}
+
+.tableHead {
+    padding-left: .2em;
+}
+
+.tdCreatAt {
+    display: none;
+}
+
+.tdName {
+    cursor: pointer;
+}
+
+.tdDetails{
+    padding-left: 1.4em;
+    cursor: pointer;
+}
+
+@media (min-width: 49.0rem){
+    .tr {
+        font-size: 1em;
+    }
+
+    .tdCreatAt {
+        display: block;
+    }
+
+    .tdDetails{
+        padding-left: 2.2em;
+    }
+}

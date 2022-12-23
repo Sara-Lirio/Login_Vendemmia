@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import Header from '../components/Header/Header'
+import Header from '../components/Header'
 import Home from '../pages/Home'
 import Login from '../pages/Login'
 import { AuthProvider, AuthContext } from '../contexts/auth'
