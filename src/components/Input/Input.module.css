@@ -1,15 +1,30 @@
 .input {
     padding: .4em 0;
-    text-align: center;
     font-size: .9em;
-    border-radius: .7em;
-    border: 1px solid gray;
-    color: var(--cinza);
-    font-family: var(--font-principal);
+    border: transparent;
+    border-bottom: 1.8px solid var(--roxo-vendemmia) ;
 }
 
-.fieldset{
+.input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.fieldset {
     border: transparent;
+    display: flex;
+}
+
+.label, .input {
+    color: var(--cinza);
+    font-family: var(--font-principal);
+    text-align: center;
+}
+
+.label {
+    font-weight: 500;
+    padding-bottom: 1em;
+    border-bottom: 1.8px solid var(--roxo-vendemmia);
 }
 
 @media (min-width: 49.0rem){
@@ -17,5 +32,9 @@
         font-size: 1.02em;
         padding: .5em 0;
         width: 100%;
+    }
+
+    .label{
+        margin-top: 1em;
     }
 }

@@ -1,12 +1,15 @@
 import React from 'react'
 import style from './Input.module.css'
 
-const Input = ({ label, type }) => {
+const Input = ({ label, type, value, onChange }) => {
   return (
     <fieldset className={style.fieldset}>
-      <label>{label}</label>
+      <label className={style.label}>{label}</label>
       <input className={style.input}
-        type={type} />
+        value={value}
+        type={type}
+        onChange={onChange}
+        />
     </fieldset>
   )
 }
