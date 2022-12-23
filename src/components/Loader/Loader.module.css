@@ -1,0 +1,26 @@
+.loader {
+    margin: 10em auto;
+    border: 8px solid #EAF0F6;
+    border-radius: 50%;
+    border-top: 8px solid var(--rosa-vendemmia);
+    width: 4rem;
+    height: 4rem;
+    animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 49.0rem) {
+    .loader {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
