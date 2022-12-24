@@ -11,9 +11,11 @@ import Button from '../../components/Button';
 
 const Home = () => {
   const [infos, setInfos] = useState([]);
-  const [loading, setLoading] = useState(false)
-  const [infoUser, setInfoUser] = useState([])
+  const [loading, setLoading] = useState(false);
+  const [infoUser, setInfoUser] = useState([]);
   const [open, setOpen] = React.useState(false);
+  const [showElement, setShowElement] = useState(false);
+  const showOrHide = () => setShowElement(true);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -35,6 +37,7 @@ const Home = () => {
     setTimeout(() => {
       request();
       setLoading(true)
+      showOrHide()
       requestUser()
     }, 2000)
   
@@ -42,10 +45,12 @@ const Home = () => {
 
   return (
     <>
+   
       <section className={style.container}>
         {!loading && <Loader />}
+        {showElement ?
         <table className={style.table}>
-          <thead className={style.tableHead}>
+         <thead className={style.tableHead}>
             <tr className={style.tr}>
               <td className={style.td}>Id</td>
               <td className={style.td}>Nome</td>
@@ -53,6 +58,8 @@ const Home = () => {
               <td>Detalhes</td>
             </tr>
           </thead>
+       
+          
           <tbody>
 
             {infos.map((info, index) => {
@@ -70,7 +77,7 @@ const Home = () => {
           </tbody>
         </table>
       
-
+      : null}
    
           <Modal
             open={open}
@@ -94,9 +101,11 @@ const Home = () => {
             
             </section>
           </Modal>
-     
-          <Link to='/' className={style.btnBackLogin}><Button text='Sair' /></Link>
-          </section>
+            {
+              showElement ? <Link to='/' className={style.btnBackLogin}><Button text='Sair' /></Link> : null }
+            
+          
+          </section> 
     </>
 
   )
