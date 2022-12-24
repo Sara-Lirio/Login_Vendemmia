@@ -1,0 +1,30 @@
+.tr {
+    font-size: .75em;
+}
+
+.tdCreatAt {
+    display: none;
+}
+
+.tdName {
+    cursor: pointer;
+}
+
+.tdDetails{
+    padding-left: 1.4em;
+    cursor: pointer;
+}
+
+@media (min-width: 49.0rem){
+    .tr {
+        font-size: 1em;
+    }
+
+    .tdCreatAt {
+        display: block;
+    }
+
+    .tdDetails{
+        padding-left: 2.2em;
+    }
+}
