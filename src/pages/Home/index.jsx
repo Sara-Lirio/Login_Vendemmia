@@ -5,8 +5,8 @@ import { getUser, getUsers } from '../../service/api'
 import Modal from '@mui/material/Modal';
 import TableUsers from '../../components/TableUsers';
 import { MdClose } from "react-icons/md";
-import { useParams } from 'react-router-dom';
-import { Box, Button } from '@mui/material';
+import { Link, useParams } from 'react-router-dom';
+import Button from '../../components/Button';
 
 
 const Home = () => {
@@ -69,7 +69,7 @@ const Home = () => {
 
           </tbody>
         </table>
-      </section>
+      
 
    
           <Modal
@@ -95,7 +95,8 @@ const Home = () => {
             </section>
           </Modal>
      
-      
+          <Link to='/' className={style.btnBackLogin}><Button text='Sair' /></Link>
+          </section>
     </>
 
   )

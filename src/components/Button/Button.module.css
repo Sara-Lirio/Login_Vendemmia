@@ -5,12 +5,14 @@
     font-size: 1em;
     text-transform: uppercase;
     font-weight: 500;
-    padding: .5em;
+    padding: 1em .4em;
     border: transparent;
     margin-top: .6em ;
     font-family: var(--font-principal);
     letter-spacing: 4px;
     cursor: pointer;
+    width: 8em;
+    margin-bottom: 1em;
 }
 
 .btn:hover{
