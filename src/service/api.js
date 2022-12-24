@@ -10,4 +10,9 @@ export async function getUsers() {
     return response.data
 }
 
-getUsers()
+export async function getUser(id) {
+    const response = await api.get(`/Users/:id/${id}`);
+    console.log(response.data);
+    return response.data
+}
+

@@ -1,22 +1,31 @@
 import React, { useEffect, useState } from 'react'
 import Loader from '../../components/Loader'
 import style from './style.module.css'
-import { getUsers } from '../../service/api'
-import { HiOutlineZoomIn } from "react-icons/hi";
+import { getUser, getUsers } from '../../service/api'
+
+import TableUsers from '../../components/TableUsers';
 
 const Home = () => {
   const [infos, setInfos] = useState([]);
   const [loading, setLoading] = useState(false)
+  const [infoUser, setInfoUser] = useState([])
 
   async function request() {
     const response = await getUsers();
     setInfos(response)
   }
 
+  async function requestUser() {
+    const response = await getUser();
+    setInfoUser(response)
+  }
+ 
+
   useEffect(() => {
     setTimeout(() => {
       request();
-      setLoading(true)
+      requestUser();
+      setLoading(true)  
     }, 2000)
   }, [])
 
@@ -36,17 +45,21 @@ const Home = () => {
           
           {infos.map((info, index) => {
             return(
-              <tr className={style.tr}>
-                <td className={style.td}>{info.id}</td>
-                <td className={style.tdName}>{info.name}</td>
-                <td className={style.tdCreatAt}>{info.createdAt}</td>
-                <td className={style.tdDetails}><HiOutlineZoomIn/></td>
-              </tr>
+              <TableUsers
+              id={info.id}
+              name={info.name}
+              createdAt={info.createdAt}
+              />
             )
           })}
           
         </tbody>
-       
+       {infoUser.map((user, index) => {
+          return(
+            <p>{user.name}</p>
+          )
+        })
+       }
       </table>
       
     </section>
