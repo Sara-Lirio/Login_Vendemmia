@@ -6,13 +6,14 @@ const api = axios.create({
 
 export async function getUsers() {
     const response = await api.get('/Users');
-    console.log(response.data);
     return response.data
 }
 
 export async function getUser(id) {
-    const response = await api.get(`/Users/:id/${id}`);
-    console.log(response.data);
+    const response = await api.get(`/Users/${id}`);
+    console.log(response.data.name);
     return response.data
 }
+
+getUser(1)
 

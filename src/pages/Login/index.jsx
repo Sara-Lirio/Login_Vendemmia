@@ -45,7 +45,7 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        {message != '' &&
+        {message !== '' &&
           <span className={style.msg}>{message}</span>
         }
         <Button

@@ -6,7 +6,7 @@
 
 .containerAnimation {
     width: 70%;
-    height: 14rem;
+    min-height: 18em;
     background-image: url(../../assets/gifWordWhite.gif);
     background-size: 100%;
     background-repeat: no-repeat;

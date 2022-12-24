@@ -15,6 +15,14 @@
     cursor: pointer;
 }
 
+.tdDetails:hover {
+    color: var(--rosa-vendemmia)
+}
+
+.tdName:hover{
+    color: var(--rosa-vendemmia)
+}
+
 @media (min-width: 49.0rem){
     .tr {
         font-size: 1em;
