@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
     console.log({ userLogin, password });
     if (userLogin === 'vendemmia' && password === '123123123') {
       setUser({ userLogin, password });
-      navigate('/home');
+      navigate('/Users');
     } else {
       console.log('Senha e/ou usuário inválido(s)');
     }

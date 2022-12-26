@@ -1,0 +1,67 @@
+.containerModal{
+    margin: 7em auto;
+    padding: 1em 2em;
+    background-image: url('../../assets/backgroundModal.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font-principal);
+    width: 16rem;
+    height: 50%;
+    border: transparent;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.sectionModal{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.containerImageAvatar{
+    width: 7em;
+    height: 7em;
+    border: .2em solid var(--rosa-vendemmia);
+    border-radius: 4em;
+}
+
+.imageAvatar{
+    margin: .27em;
+    width: 6em;
+    height: 6em;
+    border-radius: 4em;
+}
+
+.btnCloseModal {
+    background-color: var(--rosa-vendemmia);
+    color: #FFF;
+    font-family: var(--font-principal);
+    font-size: 1em;
+    padding: .5em 2em;
+    border-radius: .4em;
+    cursor: pointer;
+    border: none
+}
+
+.infoUser{
+    color: #FFF;
+    font-family: var(--font-principal);
+}
+
+@media (min-width: 49.0rem){
+   .containerModal{
+        margin: 10em auto;
+        padding: 1em 2em;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 40rem;
+        height: 65%;
+    }
+    
+
+    
+}
