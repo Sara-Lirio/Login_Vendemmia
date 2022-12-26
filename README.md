@@ -9,7 +9,7 @@ Link : [login-vendemmia.vercel.app](http://olimpia-app.vercel.app/)
 <img src='./src/assets/Tela Login_mobile.png' align="right">
 A aplicação se refere a criação de uma tela de autenticação. Aonde constam dois campos de preenchimento (Login e Senha). Após a autenticação o usuário tem acesso a listagem de dados de usuários cadastrados vindo de uma API.
 
-<img src='./src/assets/Tela Login.png' width="650px;" align="center">
+<img src='./src/assets/Tela Login.png' width="500px;" align="center">
 
 O projeto foi desenvolvido em React.js em mobile first. Demais tecnologias:<br>
  <img src="http://victorvhpg.github.io/minicurso-react.js/slides/img/logo.png" width="50px">
