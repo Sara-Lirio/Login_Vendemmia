@@ -6,15 +6,14 @@ import Login from '../pages/Login'
 import { AuthProvider, AuthContext } from '../contexts/auth'
 
 const AppRoutes = () => {
-  const Private = ({children}) => {
+  const Private = ({ children }) => {
     const { authenticated } = useContext(AuthContext);
-    if(!authenticated){
+    if (!authenticated) {
       return <Navigate to="/" />;
-    } 
+    }
     else {
       return children
     }
-  
   }
 
   return (
@@ -24,6 +23,7 @@ const AppRoutes = () => {
         <Routes>
           <Route exact path='/' element={<Login />} />
           <Route exact path='/home' element={<Private><Home /></Private>} /> {/*PRIVAR*/}
+          <Route path='/home/:id' component={Home} />
         </Routes>
       </AuthProvider>
     </BrowserRouter>

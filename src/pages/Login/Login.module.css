@@ -31,6 +31,18 @@
     margin-top: 1em;
 }
 
+.inputPassword{
+    display: flex;
+    border: transparent;
+}
+
+.btnPasswordShow{
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid var(--roxo-vendemmia);
+    padding-right: 1em;
+}
+
 @media (min-width: 49.0rem) {
     .main {
         flex-direction: row;

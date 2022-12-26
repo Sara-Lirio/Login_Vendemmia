@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './Input.module.css'
 
-const Input = ({ label, type, value, onChange }) => {
+const Input = ({ label, type, placeholder, value, onChange }) => {
   return (
     <fieldset className={style.fieldset}>
       <label className={style.label}>{label}</label>
@@ -9,6 +9,8 @@ const Input = ({ label, type, value, onChange }) => {
         value={value}
         type={type}
         onChange={onChange}
+
+        placeholder={placeholder}
         />
     </fieldset>
   )
